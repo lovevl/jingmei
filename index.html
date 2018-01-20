@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+
+        ul li{
+            /*list-style: none;*/
+        }
+
+
+
+        .nav-bar{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            /*color: #8788a3;*/
+            font-weight: 600;
+            background-color: transparent;
+            padding: 10px 20px 0 0;
+        }
+        .navbar-default{
+            border-color: transparent;
+            background-color: transparent;
+            color:#8788a3;
+        }
+        .navbar-default .navbar-nav>li>a{
+            color:#8788a3;
+        }
+        .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover
+        /*,.navbar-default .navbar-nav a:hover*/
+        {
+            color:#6a6b80;
+            background-color: transparent;
+            border-bottom: 2px solid #949494;
+        }
+
+        .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+            color:#6a6b80;
+            /*border-bottom: 2px solid #949494;*/
+        }
+
+        .nav-pic{
+            width: 100%;;
+            height: 600px;
+            background: url(img/bg/bg2.jpg) 50% 50% no-repeat;
+            background-clip: border-box;
+            background-origin: content-box;
+            background-size: cover;
+        }
+
+
+        /*优惠活动*/
+
+        .new-campaign{
+            padding: 10px 50px;
+        }
+        .camp-content{
+            /*height: 100px;*/
+            /*border: 1px solid #000;*/
+        }
+        .more{
+            overflow: hidden;
+            border-bottom: 1px solid #337ab7;
+            padding-bottom: 5px;
+        }
+        .camp-more{
+            margin: 0;
+        }
+        .camp-content .carousel-box{
+            padding-top: 10px;
+        }
+        .camp-content ul li p a{
+            font-size: 16px;
+        }
+        .camp-content ul li p a:hover{
+            color: #337ab7;
+            text-decoration: none;
+        }
+        .camp-content ul li p a .time{
+            font-size: 20px;
+            color: indianred;
+            margin-right: 15px;
+        }
+
+        .carousel-inner .item{
+            height: 200px;
+        }
+
+        /*境美优势    */
+
+        .good-gzn-container{
+            background-color: #f4f8fd;
+            padding: 15px 0;
+            box-shadow:inset 0 2px 1px #eee;
+        }
+        .content-gzn{
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+
+        .content-gzn .item{
+            padding: 15px 20px;
+            width: 250px;
+            height: 300px;
+            margin: 10px;
+            border: 1px solid #337ab7;
+            border-radius: 4px;
+        }
+
+        .content-gzn .item h4{
+            margin-bottom: 20px;
+        }
+
+        .content-gzn .item p{
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        /*走进境美*/
+        .about-us{
+            margin: 50px 0;
+        }
+        .content-about{
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .content-about p{
+            text-indent: 2em;
+        }
+        .about-img{
+            display: flex;
+            flex-direction: row;
+            flex-wrap:wrap;
+            justify-content: center;
+        }
+
+        .about-img>div{
+            width: 250px;
+            height: 320px;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .about-img>div>img{
+            width: auto;
+            height:  300px;
+        }
+
+        .trust-us{
+            background: url(img/bg/bg3.jpg) fixed center center  no-repeat;
+            -webkit-background-size: cover;
+            background-size: cover;
+            position: relative;
+            color: #fff;
+        }
+
+        .content-trust{
+            padding-top: 130px;
+            padding-bottom: 130px;
+        }
+
+        @media (max-width: 992px) {
+            .new-campaign{
+                padding: 10px 0;
+            }
+            .content-about{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="nav-pic">
+
+</div>
+<!--<div class="container-fluid">-->
+    <div class="nav-bar">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">logo</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">关于境美</a></li>
+                        <li><a href="#">产品展示</a></li>
+                        <li><a href="#">实景设计</a></li>
+                        <li><a href="#">新鲜事</a></li>
+                        <li><a href="#">优惠活动</a></li>
+                        <li><a href="#">预约我们</a></li>
+
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+<!--</div>-->
+
+<div class="container-fluid">
+    <div class="new-campaign">
+        <h4>最新优惠活动：</h4>
+        <div class="camp-content">
+            <div class="row">
+                <div class="col-sm-5 col-md-4 hidden-xs carousel-box">
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <!--<li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img src="img/campaign/index/橱柜.jpg" alt="..." >
+                                <div class="carousel-caption">
+                                    厨房墙砖
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/campaign/index/橱柜2.jpg" alt="..." >
+                                <div class="carousel-caption">
+                                    .房墙砖
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class=" col-sm-7 col-md-offset-1 col-md-7">
+                    <div class="more"><a href="#" class="camp-more pull-right">&gt;&gt;更多</a></div>
+                    <ul>
+                        <li>
+                            <p><a href="#"><span class="time">2018-01-01</span>
+                                <span class="">开业大酬宾。优惠一降到底</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="#"><span class="time">2018-01-01</span>
+                                <span class="">开业大酬宾。优惠一降到底</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="#"><span class="time">2018-01-01</span>
+                                <span class="">开业大酬宾。优惠一降到底</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="#"><span class="time">2018-01-01</span>
+                                <span class="">开业大酬宾。优惠一降到底</span></a>
+                            </p>
+                        </li>
+                        <li>
+                            <p><a href="#"><span class="time">2018-01-01</span>
+                                <span class="">开业大酬宾。优惠一降到底</span></a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid good-gzn-container">
+    <div class="good-guizaoni">
+        <h3 class="text-center">硅藻泥的优势</h3>
+        <div class="content-gzn">
+            <div class="item">
+                <h4 class="text-center">净化空气去除甲醛</h4>
+                <p>
+                    硅藻泥独特的分子筛结构，具有极强的离子交换能力，可以有效去除空气中游离的甲醛，苯，氨等TVOC有害物质，净化室内空气。
+                </p>
+            </div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="about-us">
+        <h3 class="text-center">走进境美</h3>
+        <div class="content-about">
+            <p>境美硅藻泥是北京境美境材料科技有限公司旗下产品，境美是一家融合科技与设计的新型材料公司，于2009年进入装饰建材领域；旗下拥有廊坊万庄生产培训基地以及长春原料基地；是中国建筑装饰材料协会硅藻泥行业协会理事单位;连续多年荣获中国硅藻泥十大品牌荣誉。</p>
+            <!--<p>品质服务是境美坚持的标准。目前，境美在全国中心城市等拥有近百家硅藻泥加盟门店，全部位于当地中高端主流卖场，通过总部统一的营销服务标准，保障消费者利益。</p>-->
+            <p>“健康美家、境美生活”。境美的使命是通过境美人的努力，“让更多人拥有一个健康美丽的家”，拥有更健康品质的美好生活。</p>
+        </div>
+        <div class="about-img">
+            <div>
+                <img src="img/campaign/index/橱柜3.jpg" alt="">
+                <p>我们的工厂，生产线</p>
+            </div>
+            <div>
+                <img src="img/campaign/index/橱柜3.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/campaign/index/橱柜3.jpg" alt="">
+            </div>
+            <div>
+                <img src="img/campaign/index/橱柜3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="trust-us">
+    <div class="container content-trust">
+        <h4>信赖我们的理由</h4>
+    </div>
+</div>
+<div class="ourshop container">
+    <h4>店内展示</h4>
+    <div class="about-img">  <!--待修改，为水平滚动图片-->
+        <div>
+            <img src="img/campaign/index/橱柜3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/campaign/index/橱柜3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/campaign/index/橱柜3.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/campaign/index/橱柜3.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+
+
+
+<div style="margin-bottom: 200px"></div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
