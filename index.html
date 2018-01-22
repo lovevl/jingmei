@@ -6,239 +6,12 @@
     <title>首页</title>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/commen.css">
     <link rel="stylesheet" href="css/icon/iconfont.css">
     <script src="css/icon/iconfont.js"></script>
     <style>
 
-        ul li{
-            /*list-style: none;*/
-        }
 
-
-
-        .nav-bar{
-            position: fixed;
-            top: 0;
-            width: 100%;
-            /*color: #8788a3;*/
-            font-weight: 600;
-            background-color: transparent;
-            padding: 10px 20px 0 0;
-        }
-        .navbar-default{
-            border-color: transparent;
-            background-color: transparent;
-            color:#8788a3;
-        }
-        .navbar-default .navbar-nav>li>a{
-            color:#8788a3;
-        }
-        .navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover
-        /*,.navbar-default .navbar-nav a:hover*/
-        {
-            color:#6a6b80;
-            background-color: transparent;
-            border-bottom: 2px solid #949494;
-        }
-
-        .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-            color:#6a6b80;
-            /*border-bottom: 2px solid #949494;*/
-        }
-
-        .nav-pic{
-            width: 100%;;
-            height: 600px;
-            background: url(img/bg/bg2.jpg) 50% 50% no-repeat;
-            background-clip: border-box;
-            background-origin: content-box;
-            background-size: cover;
-        }
-
-
-        /*优惠活动*/
-        .campaign-box{
-            padding-top: 30px;
-            padding-bottom: 50px;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            background-color: #0f817d;
-            color: #FFF;
-            position: relative;
-            transform: skewY(2deg);
-
-        }
-        .campaign-box h4{
-            position: absolute;
-            transform: skewY(2deg);
-            background-color: #3fbdb9;
-            box-shadow: 5px 5px 0px #185452;
-            line-height: 40px;
-            width: 40%;
-            margin-top: -70px;
-            margin-left: 2%;
-            color: #FFF;
-            font-size: 20px;
-            text-align: center;
-            padding: 0 10px;
-            font-weight: normal;
-        }
-        .new-campaign{
-            transform: skewY(-2deg);
-            padding: 10px 50px;
-        }
-        .camp-content{
-            /*height: 100px;*/
-            /*border: 1px solid #000;*/
-        }
-
-        .camp-content .carousel-box{
-            padding-top: 10px;
-        }
-        .camp-content ul li p a{
-            color: #FFF;;
-            font-size: 16px;
-            font-weight: bold;
-        }
-        .camp-content ul li p a:hover{
-            /*color: #337ab7;*/
-            text-decoration: none;
-        }
-        .camp-content ul li p a .time{
-            font-size: 20px;
-            color: #FFF;
-            margin-right: 15px;
-        }
-
-        .carousel-inner .item{
-            height: 200px;
-        }
-        .btn::after{
-            width: 150px;
-            height: 45px;
-            background: #e4862a;
-            position: absolute;
-            top: -5px;
-            left: -8px;
-            content: "";
-            z-index: -1;
-            transition: 0.1s ease-out;
-        }
-        .btn.btn-more{
-            margin-top: 35px;
-            padding: 6px 0;
-            color: inherit;
-            text-transform: none;
-            width: 110px;
-            height: 40px;
-            line-height: 20px;
-            float: right;
-            background: #092a29;
-            transform: skew(3.2deg, 3.2deg);
-        }
-        .btn.btn-more::after{
-            width: 110px;
-            height: 40px;
-            background: #3fbdb9;
-        }
-        .btn span{
-            display: block;
-            transform: translateX(-5px);
-        }
-        .btn:hover span{
-            transform: translate(1px,3px);
-        }
-        .btn:hover::after{
-            top: -2px;
-            left: -4px;
-        }
-
-
-
-        /*境美优势    */
-
-        .good-gzn-container{
-            background-color: #f4f8fd;
-            padding: 15px 0;
-            box-shadow:inset 0 2px 1px #eee;
-        }
-        .content-gzn{
-
-            display: flex;
-            flex-direction: row;
-            flex-wrap:wrap;
-            justify-content: center;
-        }
-
-        .content-gzn .item{
-            padding: 15px 20px;
-            width: 250px;
-            height: 300px;
-            margin: 10px;
-            border: 1px solid #337ab7;
-            border-radius: 4px;
-        }
-
-        .content-gzn .item h4{
-            margin-bottom: 20px;
-        }
-
-        .content-gzn .item p{
-            font-size: 14px;
-            line-height: 26px;
-        }
-
-        /*走进境美*/
-        .about-us{
-            margin: 50px 0;
-        }
-        .content-about{
-            width: 80%;
-            margin: 0 auto;
-        }
-
-        .content-about p{
-            text-indent: 2em;
-        }
-        .about-img{
-            display: flex;
-            flex-direction: row;
-            flex-wrap:wrap;
-            justify-content: center;
-        }
-
-        .about-img>div{
-            width: 250px;
-            height: 320px;
-            margin: 10px;
-            overflow: hidden;
-        }
-        .about-img>div>img{
-            width: auto;
-            height:  300px;
-        }
-
-        .trust-us{
-            background: url(img/bg/bg3.jpg) fixed center center  no-repeat;
-            -webkit-background-size: cover;
-            background-size: cover;
-            position: relative;
-            color: #fff;
-        }
-
-        .content-trust{
-            padding-top: 130px;
-            padding-bottom: 130px;
-        }
-
-        @media (max-width: 992px) {
-            .new-campaign{
-                padding: 10px 0;
-            }
-            .content-about{
-                width: 80%;
-            }
-        }
     </style>
 </head>
 <body>
@@ -352,7 +125,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid good-gzn-container">
+<div class="container-fluid good-gzn-container commen-container">
     <div class="good-guizaoni">
         <h3 class="text-center">硅藻泥的优势</h3>
         <div class="content-gzn">
@@ -405,31 +178,97 @@
         <h4>信赖我们的理由</h4>
     </div>
 </div>
-<div class="ourshop container">
-    <h4>店内展示</h4>
-    <div class="about-img">  <!--待修改，为水平滚动图片-->
-        <div>
-            <img src="img/campaign/index/橱柜3.jpg" alt="">
+<div class="ourshop container-fluid  commen-container">
+    <h3>店内展示<span>选择境美，选择健康</span></h3>
+    <div class="shop-img-scroll">  <!--待修改，为水平滚动图片-->
+        <ul id="img_scroll">
+            <li>
+                <figure>
+                    <img src="img/campaign/index/橱柜3.jpg" alt="">
+                        <figcaption><a href="#">1</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/campaign/index/橱柜3.jpg" alt="">
+                    <figcaption><a href="#">2</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/campaign/index/橱柜3.jpg" alt="">
+                    <figcaption class="text-center">
+                        <a href="#" >3</a> 采用弹涂工艺哦
+                    </figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/campaign/index/橱柜3.jpg" alt="">
+                    <figcaption><a href="#">4</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/campaign/index/橱柜3.jpg" alt="">
+                    <figcaption><a href="#">5</a></figcaption>
+                </figure>
+            </li>
+            <li>
+                <figure>
+                    <img src="img/campaign/index/橱柜3.jpg" alt="">
+                    <figcaption><a href="#">6</a></figcaption>
+                </figure>
+            </li>
+        </ul>
+
+    </div>
+    <!--<div id="forkus">-->
+        <!--<div id="forkbefore"></div>-->
+        <!--<div id="fork">-->
+            <!--<a href="https://github.com/nidium/Nidium/" target="_blank" id="github"><i class="fa fa-github" aria-hidden="true"></i><small>选择境美，选择健康</small></a>-->
+        <!--</div>-->
+        <!--<div id="forkafter"></div>-->
+        <!--<div id="forkwhite"></div>-->
+    <!--</div>-->
+</div>
+<div class="assess-box container">
+    <div class="row">
+        <div class="col-sm-6 col-md-6  hidden-xs ">
+            <img class="img-responsive center-block" src="img/index/assess.jpg" alt="">
         </div>
-        <div>
-            <img src="img/campaign/index/橱柜3.jpg" alt="">
+        <div class="col-sm-6 col-md-6 assess-center">
+            <h2>他们如何评价境美</h2>
+            <div>
+                <p>环保健康，吸附甲醛效果好。<br>
+                   <span>—— 北京张先生138****0000</span>
+                </p>
+            </div>
         </div>
-        <div>
-            <img src="img/campaign/index/橱柜3.jpg" alt="">
-        </div>
-        <div>
-            <img src="img/campaign/index/橱柜3.jpg" alt="">
-        </div>
+    </div>
+    <div class="assess-more">
+        <div class="assess-custom"><a href="#">张</a></div>
+        <div class="assess-custom"><a href="#">黄</a></div>
+        <div class="assess-custom"><a href="#">沈</a></div>
+        <div class="assess-custom"><a href="#">关</a></div>
+        <div class="assess-custom"><a href="#">于</a></div>
+        <div class="assess-custom"><a href="#">傅</a></div>
     </div>
 </div>
 
-
-
+<div class="technology">
+    <div class="tech-opacity">
+    <div class="container tech text-center">
+        <h3>我们的产品工艺</h3>
+        <button class="btn btn-default">弹涂</button>
+    </div>
+    </div>
+</div>
 
 <div style="margin-bottom: 200px"></div>
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script src="js/commen.js"></script>
 </body>
 </html>
