@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>首页</title>
-    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"
-          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/commen.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/icon/iconfont.css">
-    <script src="css/icon/iconfont.js"></script>
+    <!--<script src="css/icon/iconfont.js"></script>-->
     <style>
 
 
     </style>
 </head>
 <body>
-<div class="nav-pic">
 
-</div>
 <!--<div class="container-fluid">-->
-    <div class="nav-bar">
+    <div class="nav-bar fixed" id="nav_bar_id">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -37,7 +35,7 @@
                 <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">关于境美</a></li>
+                        <li><a href="about/aboutwe.html">关于境美</a></li>
                         <li><a href="#">产品展示</a></li>
                         <li><a href="#">实景设计</a></li>
                         <li><a href="#">新鲜事</a></li>
@@ -50,7 +48,9 @@
             </div><!-- /.container-fluid -->
         </nav>
     </div>
-<!--</div>-->
+<!--紧跟nav—bar下方，当navbar获得fixed的时候，margin-top一个高度-->
+<div class="ad_bar" id="ad_bar_id"></div>
+<div class="nav-pic" id="first_pic_id"></div>
 
 <div class="container-fluid campaign-box">
     <div class="new-campaign">
@@ -132,17 +132,40 @@
         <div class="content-gzn">
             <div class="item">
                 <h4 class="text-center">净化空气去除甲醛</h4>
+                <div class=""><span class="temp-icon"></span></div>
                 <p>
                     硅藻泥独特的分子筛结构，具有极强的离子交换能力，可以有效去除空气中游离的甲醛，苯，氨等TVOC有害物质，净化室内空气。
                 </p>
             </div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
-            <div class="item"></div>
+            <div class="item">
+                <h4 class="text-center">调节湿度</h4>
+                <p>当室内潮湿时，硅藻泥将室内空气中水分吸收储存，当空气干燥时再释放出来，从而调节室内湿度，硅藻泥也被称为“会呼吸的墙壁”。</p>
+            </div>
+            <div class="item">
+                <h4 class="text-center">吸音降噪</h4>
+                <p>硅藻泥为多孔结构，它可以有效吸附有害的高音段，弱化噪音（相当同等厚度的水泥和石板的2倍以上），大幅减少声音污染，还您一个“安稳觉”。</p>
+            </div>
+            <div class="item">
+                <h4 class="text-center">防火阻燃</h4>
+                <p>硅藻泥是无机材料，只有熔点没有燃点。（遇1300度的高温为熔炉状态）遇明火不燃烧，不会产生有毒烟雾。</p>
+            </div>
+            <div class="item">
+                <h4 class="text-center">防霉除菌</h4>
+                <p>硅藻泥为碱性材料，本身具有防霉除菌的作用。</p>
+            </div>
+            <div class="item">
+                <h4 class="text-center">墙面易洁</h4>
+                <p>硅藻泥主要成分是天然矿物质，自身不含有重金属，不发生静电，不吸尘。</p>
+            </div>
+            <div class="item">
+                <h4 class="text-center">艺术性强</h4>
+                <div class=""><span class="temp-icon"></span></div>
+                <p>硅藻泥可塑性强，拥有多种色彩和丰富的肌理变化，纯手工制作工艺符合现代人个性需求。凹凸的肌理、温馨的色彩、细腻的手感，处处体现档次与艺术性。</p>
+            </div>
+            <div class="item">
+                <h4 class="text-center">寿命超长</h4>
+                <p>经专家认证，硅藻泥寿命至少长达20年，不翘边，不脱落，不褪色，耐氧化，始终如新。</p>
+            </div>
         </div>
     </div>
 </div>
@@ -403,8 +426,9 @@
 </footer>
 
 <script src="js/jquery-2.1.4.min.js"></script>
-<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/base.js"></script>
+<script src="js/index.js"></script>
 <script src="js/commen.js"></script>
 </body>
 </html>

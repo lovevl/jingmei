@@ -1,0 +1,30 @@
+body{
+    background-color: #eee;
+}
+.addr p{
+    padding: 0;
+}
+hr{
+    border-top: 1px solid #fff;
+}
+
+
+/*具体内容*/
+.about-content{
+    margin-left: 266px;
+
+    /*border: 1px solid #689f38;*/
+}
+.about-content{
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+.about-content p{
+    text-indent: 2em;
+}
+
+.img-about-jm{
+    width: 60%;
+}
