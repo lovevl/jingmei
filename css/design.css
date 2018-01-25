@@ -1,0 +1,192 @@
+body{
+    background-color:  #eee;
+}
+hr{
+    border-top: 1px solid #fff;
+}
+.condition ul,.pictures ul{
+    list-style: none;
+    overflow: hidden;
+    padding-left: 0;
+    margin: 0;
+}
+.condition ul li,.pictures ul li{
+    float: left;
+}
+
+/*实景设计第一张图*/
+.design-nav-pic{
+    width: 100%;;
+    height: 400px;
+    background: url(../img/design/design-bg-2.jpg) 40% 60% no-repeat;
+    background-clip: border-box;
+    background-origin: content-box;
+    background-size: cover;
+}
+
+
+
+/*已选条件*/
+.classify{
+    font-size: 12px;
+    line-height: 14px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 4px;
+}
+.classify a{
+    position: relative;
+    display: inline-block;
+    color: #626262;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 18px;
+    margin-right: 6px;
+    border: 1px solid #d0d0d0;
+}
+.classify a .icon-x{
+    position: absolute;
+    top:6px;
+    right:6px;
+}
+.classify a:hover .icon-x{
+    background-position: -17px 0;
+}
+.classify a:hover{
+    border-color: #f40;
+    text-decoration: none;
+}
+
+/*条件筛选*/
+.condition{
+    border: 1px solid #d0d0d0;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.group{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -1px;
+    border-bottom: 1px dashed #d0d0d0;
+}
+
+.body{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.body span{
+    float: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    /*color: #d0d0d0;*/
+}
+
+.title{
+    display: inline-block;
+}
+.filter a{
+    color: #000;
+}
+.filter a:hover{
+    text-decoration: none;
+}
+.condition a{
+    margin: 0 15px;
+}
+.condition a:hover{
+    color: #f40;
+}
+
+/*排序css*/
+.sorting{
+    /*display: inline-block;*/
+
+}
+.sorting a{
+    position: relative;
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    border: 1px solid #d0d0d0;
+    padding: 0 20px;
+}
+.sorting a:not(:first-child){
+    margin-left: -1px ;
+}
+.sorting a.active{
+    border-color: #f40;
+    z-index: 1;
+}
+
+/*图片浏览*/
+.jq22-container {
+    margin-top: 30px;
+}
+
+#pictures {
+    margin: auto;
+    position: relative;
+}
+
+
+.box {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    cursor: pointer;
+}
+.box img {
+    width: 500px;
+}
+.box .describe{
+    position: absolute;
+    bottom: -26px;
+    padding: 3px 10px;
+    width: 100%;
+    background-color: #18bcbc;
+    transition: bottom .5s;
+}
+.box .describe p{
+    color: #fff;
+    margin-bottom: 0;
+    overflow: hidden;
+}
+.box:hover .describe{
+    bottom:0;
+}
+
+/*图片放大*/
+.lightboxOverlay{
+    position: fixed;
+    display:block;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height:100%;
+    background-color: black;
+    opacity:0.7;
+}
+.img_box{
+    position: fixed	;
+    width:100%;
+    z-index: 1000;
+    top:0px;
+    left:0px;
+    text-align:center;
+}
+.img_inner{
+    padding:15px;
+}
+.img_inner img{
+    border-width : 4px 8px;
+    border-style:solid;
+    border-color:#fff;
+    max-height:95%;
+    max-width:90%;
+    height:auto;
+}
+body{
+    overflow-x: hidden;
+}

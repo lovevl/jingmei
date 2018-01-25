@@ -6,3 +6,18 @@
     height: 30px;
     /*transform: translateY(2px);*/
 }
+.icon-right{
+    width: 12px;
+    height: 12px;
+}
+.icon-img{
+    background-image: url(img/X.png);
+    background-repeat: no-repeat;
+    background-size: 24px 7px;
+}
+
+.icon-x{
+    width: 7px;
+    height: 7px;
+    background-position: 0 0;
+}

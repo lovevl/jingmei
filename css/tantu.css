@@ -1,0 +1,21 @@
+/*图片的backgroundurl*/
+
+
+.item-pic:nth-child(1) .pic-h{
+    background-image: url(../img/tech/taose-1.jpg);
+}
+.item-pic:nth-child(2) .pic-h{
+    background-image: url(../img/tech/danse-1.jpg);
+}
+.item-pic:nth-child(3) .pic-h{
+    background-image: url(../img/tech/zhuanyi-1.jpg);
+}
+.item-pic:nth-child(4) .pic-h{
+    background-image: url(../img/tech/lifang-1.jpg);
+}
+.item-pic:nth-child(5) .pic-h{
+    background-image: url(../img/tech/pingtu-1.jpg);
+}
+
+
+/*套色图片轮播*/

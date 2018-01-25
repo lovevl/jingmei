@@ -1,3 +1,162 @@
+body{
+    background-color:  #eee;
+}
+hr{
+    border-top: 1px solid #fff;
+}
 .tech-content{
     min-height: 366px;
+    /*border: 1px solid royalblue;*/
+}
+
+/*右侧图片展示公共css*/
+.items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+}
+.item-pic{
+    border: 1px solid #eee;
+    width: 250px;
+    height: 320px;
+    margin: 18px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+.item-pic .pic-h{
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size:auto 110% ;
+    transition: background-size 0.5s;
+}
+.item-pic .pic-h:hover{
+    background-size:auto 150% ;
+}
+.item-pic .pic-h:hover .hidden-box{
+    bottom:0;
+}
+.item-pic .pic-h:hover+div a{
+    transform: translateY(50px);
+}
+.item-pic{
+    position: relative;
+}
+.item-pic>div{
+    padding-top: 25px;
+}
+.item-pic>div>a{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 20px;
+    transition: transform 0.3s;
+}
+.item-pic .hidden-box{
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    height: 100px;
+    padding: 8px;
+    z-index: 55;
+    transition: bottom 0.5s 0.15s;
+}
+.item-pic .hidden-box a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration:underline;
+}
+.item-pic .hidden-box a:hover{
+    color: #eee;
+}
+.item-pic .hidden-box p{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    color: #fff;
+}
+
+/*图片轮播公共css*/
+.img-carousel{
+    width: 80%;
+    /*height: 500px;*/
+}
+.img-describe{
+    margin-top: 100px;
+}
+.img-carousel img{
+    width: 100%;
+
+}
+/*carousel的细节修改*/
+.carousel-indicators{
+    bottom: -80px;
+}
+ol.carousel-indicators li{
+    display: inline-block;
+    width: 52px;
+    height: 52px;
+    margin: 0px;
+    text-indent: 0;
+    cursor: pointer;
+    /*background-color: #000\9;*/
+    /*background-color: #fff;*/
+    border: 2px solid #eee;
+    border-radius: 0;
+}
+.carousel-indicators li img{
+    width: 48px;
+    height: 48px;
+}
+.carousel-indicators .active{
+    width: 52px;
+    height: 52px;
+    margin: 0;
+    /*border-color: #689f38;*/
+}
+.carousel-control{
+    opacity: 0.7;
+}
+.carousel-control:hover{
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.9);;
+}
+.carousel-control.right{
+    right:-100px;
+    background-image:none;
+}
+.carousel-control.left{
+    left:-100px;
+    background-image:none;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    height: 450px;
+}
+.ca-center{
+    margin: 0 auto;
+}
+@media (max-width: 992px) {
+    .img-carousel{
+        width: 100%;
+    }
+    .carousel-control.right{
+        right:0;
+    }
+    .carousel-control.left{
+        left:0;
+    }
+    .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+        height: 380px;
+    }
+
+}
+@media (max-width: 768px) {
+    .carousel-indicators{
+        width: 80%;
+    }
 }
