@@ -1,6 +1,8 @@
 .news-content{
-
     padding: 23px 18px;
+}
+.news-content hr{
+    border-color: #eee;
 }
 
 .news-content ul{
@@ -8,13 +10,24 @@
     padding-left: 0;
     margin-bottom: 0;
 }
-.news-content li{
+.news-contentli{
     /*height: 130px;*/
     position: relative;
     padding-bottom: 10px;
     margin-top: 15px;
     overflow: hidden;
 }
+.news-content>div>p{
+    text-indent: 2em;
+}
+p.time{
+    font-size: 12px;
+}
+div.tags{
+    font-size: 12px;
+    margin-top: 25px;
+}
+
 .e-border-line,.f-border-line{
     position: absolute;
     bottom: 0px;
@@ -43,7 +56,11 @@ li .img{
 li .img-box{
     width: 140px;
     height: 100px;
-    border: 1px solid #245580;
+    /*border: 1px solid #245580;*/
+}
+.news-content li img{
+    width: 100%;
+    height: 100%;
 }
 .news-content .body{
     padding: 0 10px;
@@ -68,6 +85,21 @@ li .img-box{
     font-size: 12px;
     cursor: default;
 }
+.news-nav-bar{
+    width: 100%;
+    height: 350px;
+    background: url(http://jm.imge.top/nav-bar/c6x.jpg) center top no-repeat;
+    /*background-clip: border-box;*/
+    /*background-origin: content-box;*/
+    background-size: cover;
+}
+._news li{
+    margin-top: 0;
+    padding-bottom: 0;
+    text-indent: 2em;
+}
+
+
 
 /*更改boostrap的col-*/
 .news-content .col-xs-4{

@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>新鲜事</title>
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/commen.css">
-    <link rel="stylesheet" href="../css/news.css">
-    <link rel="stylesheet" href="../css/icon/iconfont.css">
+    <link rel="stylesheet" href="../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/commen.css">
+    <link rel="stylesheet" href="../../css/news.css">
+    <link rel="stylesheet" href="../../css/icon/iconfont.css">
     <!--<script src="css/icon/iconfont.js"></script>-->
     <style>
 
@@ -33,15 +33,24 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
-                        <li ><a href="../index.html">首页 </a></li>
-                        <li><a href="../about/aboutwe.html">关于境美</a></li>
-                        <li><a href="../tech/tantu.html">产品工艺</a></li>
-                        <li><a href="../design/design.html">实景设计</a></li>
-                        <li  class="active"><a href="#">新鲜事<span class="sr-only">(current)</span></a></li>
-                        <li><a href="../active/promotion.html">优惠活动</a></li>
-                        <li><a href="../appoint/now.html">预约我们</a></li>
-
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="../../index.html">首页 </a></li>
+                        <li><a href="../../about/aboutwe.html">关于境美</a></li>
+                        <li><a href="../../tech/tantu.html">产品工艺</a></li>
+                        <li><a href="../../design/design.html">实景设计</a></li>
+                        <li  class="active"><a href="../jm.html">新鲜事<span class="sr-only">(current)</span></a></li>
+                        <li><a href="../../active/promotion.html">优惠活动</a></li>
+                        <li><a href="../../appoint/now.html">预约我们</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">我们的服务<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">我要装修</a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->
@@ -50,10 +59,16 @@
     </div>
 <!--紧跟nav—bar下方，当navbar获得fixed的时候，margin-top一个高度-->
 <div class="ad_bar" id="ad_bar_id" >
-    <div style="height: 80px"></div>
 </div>
+<div class="news-nav-bar">
+
+</div>
+
 <div class="container addr">
-    <p>你所在位置：<a href="#">首页</a>&gt;&gt;<a href="#">新鲜事</a>&gt;&gt;<a href="#">境美新闻</a></p>
+    <p>你所在位置：<a href="../../index.html">首页</a>
+        <i class="iconfont icon-xiangyou"></i><a href="../recent.html">新鲜事</a>
+        <i class="iconfont icon-xiangyou"></i><a href="../jm.html">境美新闻</a>
+        <i class="iconfont icon-xiangyou"></i><a class="no-click">祝贺境美硅藻泥荣获硅藻泥分会理事单位</a></p>
     <hr>
 </div>
 <section class="left-menu" id="menu_id">
@@ -62,19 +77,19 @@
             <div class="menu-bar " id="menu_bar_id">
                 <ul>
                     <li class="active">
-                        <a href="#">
+                        <a href="../jm.html">
                         <span class="color-block"><i class="iconfont icon-menu icon-news_icon"></i></span>
                         <span class="link">境美新闻</span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="../hy.html">
                         <span class="color-block"><i class="iconfont icon-menu icon-xinwen"></i></span>
                         <span class="link">行业新闻</span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="../gzn.html">
                         <span class="color-block"><i class="iconfont icon-menu icon-query-knowledge"></i></span>
                         <span class="link">硅藻泥小知识</span>
                     </a></li>
-                    <li><a href="#">
+                    <li><a href="../zz.html">
                         <span class="color-block"><i class="iconfont icon-menu icon-zhishiku"></i></span>
                         <span class="link">装修小知识</span>
                     </a></li>
@@ -86,13 +101,36 @@
                     <a href="#"><i class="iconfont icon-menu-1 icon-tupian1"></i><span><strong>在线选图</strong><span class="miaoshu">给新家设计一下吧</span></span></a>
                 </div>
             </div>
-            <div class="news-content menu-content shadow-c  ">
+            <div class="news-content menu-content shadow-c" id="news_detail_id">
                 <div>
-                    <ul id="news_list_id">
-
-                    </ul>
-                    <div class="pagination pagination-centered">
+                    <h3 class="text-center">祝贺境美硅藻泥荣获硅藻泥分会理事单位</h3>
+                    <p class="text-center time"><span>更新时间: 2017-01-03 10:30:35</span></p>
+                    <p>中国建筑装饰装修材料协会评选出吉林省境美装饰材料有限公司为中国建筑装饰装修材料协会硅藻泥材料分会理事单位。理事单位由本会及各省、自治区、直辖市有关协会推荐，经秘书处审议后，提请会员代表大会或理事会、常务理事会选举。</p>
+                    <br>
+                    <p>理事会是会员代表大会的执行机构，在会员代表大会闭会期间领导本会开展日常工作，对会员代表大会负责。</p>
+                    <br>
+                    <p>吉林省境美装饰材料有限公司（简称境美硅藻泥）是一家融合科技与设计的新型材料公司，公司创始人团队自2009年聚焦家居建材营销以来，在行业屡获荣誉。面对消费者日益对室内以及墙面美观的需求，于2014年创立服务于高档装修的境美品牌。</p>
+                    <img src="http://jm.imge.top/news/20170103/DN6.jpg" class="center-block" alt="">
+                    <div class="tags">
+                        相关标签：
+                        <a href="../search.html?tag=硅藻泥"><span>硅藻泥</span></a>
                     </div>
+                </div>
+                <div class="clearfix"></div>
+                <hr>
+                <div class="_news">
+                    <h4>最新文章</h4>
+                    <ul>
+                        <li><a href="#">吉林省境美装饰</a></li>
+                        <li><a href="#">吉林省境美装饰</a></li>
+                    </ul>
+                </div>
+                <div class="_news">
+                    <h4>推荐文章</h4>
+                    <ul>
+                        <li><a href="#">吉林省境美装饰</a></li>
+                        <li><a href="#">吉林省境美装饰</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -133,12 +171,12 @@
                 <h5>联系我们</h5>
                 <ul>
                     <li><a href="#">点此预约</a></li>
-                    <li><a href="tel:13063075706">13063075706</a></li>
-                    <li><a href="tel:13860931774">13860931774</a></li>
+                    <li><a href="tel:13063075706">黄13063075706</a></li>
+                    <li><a href="tel:13860931774">黄13860931774</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4 text-center">
-                <div class="QRcode"><img class="QR" src="../img/index/QRcode.jpeg" alt="">
+                <div class="QRcode"><img class="QR" src="../../img/index/QRcode.jpeg" alt="">
                     <p>关注公众号，获得更多服务</p>
                 </div>
             </div>
@@ -150,13 +188,14 @@
     </div>
 </footer>
 
-<script src="../js/jquery-2.1.4.min.js"></script>
-<script src="../js/bootstrap.min.js"></script>
-<script src="../js/base.js"></script>
-<script src="../js/commen.js"></script>
-<script src="../js/menu.js"></script>
-<script src="../js/pageCount.js"></script>
-<script src="../js/news.js"></script>
+<script src="../../js/jquery-2.1.4.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+<script src="../../js/base.js"></script>
+<script src="../../js/commen.js"></script>
+<script src="../../js/menu.js"></script>
+<script src="../../js/news_detail.js"></script>
+<!--<script src="../js/pageCount.js"></script>-->
+<!--<script src="../js/news.js"></script>-->
 <script>
 
 

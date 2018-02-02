@@ -20,16 +20,23 @@ n = {
     querys : function () {
         u.ajaxFn();
     },
+    $menuDiv : $('#menu_bar_id'),
     initOptionsFn : function () {
         var thisUrl = window.location.href;
+        var $lis = n.$menuDiv.find('li');
+        $lis.removeClass("active");
         if(thisUrl.indexOf("jm")>-1){
             n.options.type = 1;
+            $lis.eq(0).addClass("active");
         }else if(thisUrl.indexOf("hy")>-1){
             n.options.type = 2;
+            $lis.eq(1).addClass("active");
         }else if(thisUrl.indexOf("gzn")>-1){
             n.options.type = 3;
+            $lis.eq(2).addClass("active");
         }else if(thisUrl.indexOf("zz")>-1){
             n.options.type = 4;
+            $lis.eq(3).addClass("active");
         }
 
     }
@@ -43,7 +50,7 @@ u = {
         n.options.pageNo = n.page.pageNo;
         n.options.length = n.page.length;
         $.ajax({
-            url : "http://127.0.0.1:8089/jm/news/list.json",
+            url : "http://immrh.cn/jm/news/list.json",
             data : n.options,
             type : "POST",
 //                contentType : "application/json;charset=utf-8",
@@ -65,8 +72,8 @@ u = {
         if(d){
             for(var i=0; i < d.length; i++){
                 var $li = $('<li></li>');
-                var strHtml = '<div class="row"><div class="col-xs-4 col-md-3 img"><div class="img-box">' + d[i].imgUrl +
-                    '</div></div><div class="col-xs-8 col-md-9 body "><p class="title"><a href="' + d[i].url +
+                var strHtml = '<div class="row"><div class="col-xs-4 col-md-3 img"><div class="img-box"><img src="' + d[i].imgUrl +
+                    '" alt=""></div></div><div class="col-xs-8 col-md-9 body "><p class="title"><a href="' + d[i].url +
                     '">' + d[i].title +
                     '</a></p><p class="content">' + d[i].detail +
                     '</p><span>' + d[i].pubTime +

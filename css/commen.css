@@ -203,6 +203,13 @@ hr{
     background-color: #af6cce;
 }
 
+a.no-click{
+    cursor: default;
+}
+a.no-click:hover{
+    color: inherit;
+    text-decoration: none;
+}
 
 /*排序css*/
 .filter a{
