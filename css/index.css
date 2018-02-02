@@ -1,7 +1,9 @@
 ul li{
     /*list-style: none;*/
 }
-
+body{
+    background-color: #fff;
+}
 
 
 /*优惠活动*/

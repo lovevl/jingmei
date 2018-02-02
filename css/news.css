@@ -1,0 +1,95 @@
+.news-content{
+
+    padding: 23px 18px;
+}
+
+.news-content ul{
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.news-content li{
+    /*height: 130px;*/
+    position: relative;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+}
+.e-border-line,.f-border-line{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 1px;
+}
+.e-border-line{
+    left: 0;
+    background-color:#eee;
+}
+.f-border-line{
+    left: -100%;
+    /*background-color: rgb(104, 159, 56);*/
+    transition: left 0.6s;
+}
+.news-content li:hover .f-border-line{
+    left:0;
+}
+li>div{
+    float: left;
+    display: inline-block;
+}
+li .img{
+    overflow: hidden;
+}
+li .img-box{
+    width: 140px;
+    height: 100px;
+    border: 1px solid #245580;
+}
+.news-content .body{
+    padding: 0 10px;
+}
+.news-content .title{
+    font-size: 20px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.news-content .content{
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    cursor: default;
+}
+.news-content .body span{
+    font-size: 12px;
+    cursor: default;
+}
+
+/*更改boostrap的col-*/
+.news-content .col-xs-4{
+    width: 33.33333333%;
+}
+.news-content .col-xs-8{
+    width: 66.66666667%;
+}
+@media (min-width: 768px) {
+    .news-content .col-sm-4{
+        width: 35%;
+    }
+    .news-content .col-sm-8{
+        width: 63%;
+    }
+}
+@media (min-width: 992px) {
+    .news-content .col-md-3 {
+        width: 20%;
+    }
+
+    .news-content .col-md-9 {
+        width: 78%;
+    }
+}

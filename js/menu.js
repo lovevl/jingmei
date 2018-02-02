@@ -3,7 +3,6 @@
  */
 $(function () {
     menu.init();
-
 });
 
 

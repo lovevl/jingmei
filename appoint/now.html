@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>预约我们</title>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/commen.css">
+    <link rel="stylesheet" href="../css/appoint.css">
+    <link rel="stylesheet" href="../css/icon/iconfont.css">
+    <script src="../js/jquery/modernizr.custom.63321.js"></script>
+    <!--<script src="css/icon/iconfont.js"></script>-->
+    <style>
+
+
+    </style>
+</head>
+<body>
+
+<!--<div class="container-fluid">-->
+    <div class="nav-bar backColor" id="nav_bar_id">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">logo</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse pull-right" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="../index.html">首页 </a></li>
+                        <li><a href="../about/aboutwe.html">关于境美</a></li>
+                        <li><a href="../tech/tantu.html">产品工艺</a></li>
+                        <li><a href="../design/design.html">实景设计</a></li>
+                        <li><a href="../news/jm.html">新鲜事</a></li>
+                        <li><a href="../active/promotion.html">优惠活动</a></li>
+                        <li  class="active"><a href="#">预约我们<span class="sr-only">(current)</span></a></li>
+
+                    </ul>
+
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+    </div>
+<!--紧跟nav—bar下方，当navbar获得fixed的时候，margin-top一个高度-->
+<div class="ad_bar" id="ad_bar_id" >
+    <div style="height: 80px"></div>
+</div>
+<div class="container addr">
+    <p>你所在位置：<a href="#">首页</a>&gt;&gt;<a href="#">预约我们</a></p>
+    <hr>
+</div>
+<section class="appoint">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="form-box shadow-c one-color">
+                    <form class="form" action="" onsubmit="">
+                        <div class="form-inline form-group">
+                            <div class="form-group">
+                                <label for="">姓：</label>
+                                <input type="text" class="name-in one-color">
+                            </div>
+                            <div id="dd" class="form-group wrapper-dropdown-1 one-bg-color" tabindex="1">
+                                <span>称呼：</span>
+                                <input id="gender" type="hidden" name="gender">
+                                <ul class="dropdown" tabindex="1">
+                                    <li data-id="0"><a href="#">先生</a>
+                                    </li>
+                                    <li data-id="1"><a href="#">女士</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="">联系电话：</label>
+                            <input type="text" class="one-color">
+                        </div>
+                        <div class="form-group">
+                            <label for="">预约时间：</label>
+                            <input type="text" class="one-color">
+                        </div>
+                        <div class="form-inline form-group">
+                            <label for="">预约内容：</label>
+                            <div class="select-box">
+                                <select id="cd-dropdown" name="type" class="cd-select">
+                                    <option value="-1"  selected>请选择</option>
+                                    <option value="1" class="icon-select icon-iconda">我要装修</option>
+                                    <option value="2" class="icon-select icon-jiageprice">价格咨询</option>
+                                    <option value="3" class="icon-select icon-kefu">售后服务</option>
+                                    <option value="4" class="icon-select icon-zixunfuwu">其他咨询</option>
+                                    <option value="5" class="icon-select icon-tousu1">我要投诉</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">详细：</label>
+                        </div>
+                        <textarea rows="3" class="one-color"></textarea>
+                        <div class="form-group text-center">
+                            <div class="form-submit ">
+                                <input type="submit" class="one-bg-color" value="预约">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="code-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="contact shadow-c">
+                    <p class="title">您也可以添加店长个人微信，<strong>任何问题</strong>可以得到更快的回答哦～</p>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="code text-center">
+                            <div class="img"><img class="img-responsive" src="../img/index/QRcode.jpeg" alt=""></div>
+                            <p>店长个人微信</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="code text-center">
+                                <div class="img"><img class="img-responsive" src="../img/index/QRcode.jpeg" alt=""></div>
+                                <p>运营经理个人微信</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="code text-center">
+                                <div class="img"><img class="img-responsive" src="../img/index/QRcode.jpeg" alt=""></div>
+                                <p>境美硅藻泥漳州旗舰店公众号</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col-sm-2 ">
+                <h5>关于</h5>
+                <ul>
+                    <li><a href="#">关于境美</a></li>
+                    <li><a href="#">关于我们</a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3 col-sm-2 ">
+                <h5>实例样板房</h5>
+                <ul>
+                    <li><a href="#">儿童房效果图</a></li>
+                    <li><a href="#">客厅效果图</a></li>
+                    <li><a href="#">书房效果图</a></li>
+                    <li><a href="#">卧室效果图</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3 col-sm-2 ">
+                <h5>服务</h5>
+                <ul>
+                    <li><a href="#">在线选图</a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+            <div class="col-xs-3 col-sm-2 ">
+                <h5>联系我们</h5>
+                <ul>
+                    <li><a href="#">点此预约</a></li>
+                    <li><a href="tel:13063075706">13063075706</a></li>
+                    <li><a href="tel:13860931774">13860931774</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 text-center">
+                <div class="QRcode"><img class="QR" src="../img/index/QRcode.jpeg" alt="">
+                    <p>关注公众号，获得更多服务</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="addr">
+            <p class="text-center">北京境美境材料科技有限公司授权至漳州境美硅藻泥旗舰店&nbsp;&nbsp;地址：漳州开发区山语海2幢D08</p>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/jquery-2.1.4.min.js"></script>
+<script src="../js/jquery/jquery.dropdown.js"></script>
+<script>
+    $( '#cd-dropdown' ).dropdown( {
+        gutter : 5,
+        delay : 100,
+        random : true
+    } );
+</script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/base.js"></script>
+<script src="../js/commen.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/appoint.js"></script>
+</body>
+</html>

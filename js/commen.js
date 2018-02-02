@@ -5,8 +5,6 @@
 $(function () {
 
 
-
-
     // 固定nav栏
     nav = {
         bar : document.getElementById("nav_bar_id"),
@@ -17,8 +15,12 @@ $(function () {
             var adBarTop = parseInt(getStyle(nav.adbar,"marginTop"));
             var clientW = client().width;
             var className = "backColor";
+            var $bar = $(nav.bar);
             if(clientW < 768){
                 className = "backColor-mobile";
+                if($bar.hasClass('backColor')){
+                    $bar.removeClass('backColor').addClass('backColor-mobile');
+                }
             }
 
             $(window).scroll(function () {
@@ -33,19 +35,20 @@ $(function () {
                     nav.adbar.style.marginTop = 0;
                     var picHeight = nav.picId.offsetHeight;
                     if (scroll().top > barTop + picHeight) {
-                        $(nav.bar).addClass(className);
+                        $bar.addClass(className);
                     } else {
-                        $(nav.bar).removeClass(className);
+                        $bar.removeClass(className);
                     }
                 } else {
-                    $(nav.bar).addClass(className);
+                    $bar.addClass(className);
                 }
                 //左侧菜单栏的fixed定位
-                if (menu.$menu.length > 0) {
-                    menu.fnMenu();
+                if(client().width > 768) {
+                    if (menu.$menu.length > 0) {
+                        menu.fnMenu();
+                    }
                 }
             });
-
         }
     };
 
@@ -79,7 +82,7 @@ menu ={
         });
     },
     fnMenu : function () {
-        if(menu.$menu) {
+        if(menu.$menu.length > 0) {
             var aboutTop = menu.$menu.offset().top;
             var menuBar = menu.$menu.find('.menu-bar');
             var navBarHeight = document.getElementById('nav_bar_id').offsetHeight;
@@ -100,11 +103,15 @@ menu ={
 
 menuContent = {
     $carousel : $('#carousel-ol'),
-    $hiddenBox : $('.tech-content .hidden-box'),
+    $hiddenBox : $('.item-pic'),
     $menuLi : $('.menu-bar li.active'),
+    $borderColor : $('.f-border-line'),
+    $service : $('#service_id'),
+    rbg : '',
     initItemColorFn : function () {
         if(menuContent.$hiddenBox.length > 0) {
             var rbgColor = menuContent.$menuLi.css("background-color");
+            menuContent.rbg = rbgColor;
             $.each(menuContent.$hiddenBox, function (i, n) {
                 n.style.backgroundColor = rbgColor;
             });
@@ -112,14 +119,35 @@ menuContent = {
     },
     initCarouselColorFn : function () {
         if(menuContent.$carousel.length > 0){
-            var rbgColor = menuContent.$menuLi.css("background-color");
-            console.log(rbgColor);
+            var rbgColor = menuContent.rbg==''?menuContent.$menuLi.css("background-color"):menuContent.rbg;
+            // console.log(rbgColor);
             var $style = $('<style>.carousel-indicators .active{border-color:'+rbgColor+'}</style>');
+            $('head').append($style);
+        }
+    },
+    initBorderLineColorFn : function () {
+        if(window.location.href.indexOf("news") > -1){
+            var rbgColor = menuContent.rbg==''?menuContent.$menuLi.css("background-color"):menuContent.rbg;
+            $('head').append($('<style>.f-border-line{background-color:'+rbgColor+'}</style>'));
+            // menuContent.$borderColor.css("background-color",rbgColor);
+        }
+    },
+    fnService : function () {
+        if(menuContent.$service.length > 0){
+            var rbgColor = menuContent.rbg==''?menuContent.$menuLi.css("background-color"):menuContent.rbg;
+            menuContent.$service.find('i').css("color",rbgColor);
+            var $oldstyle = $('#service_style');
+            if($oldstyle.length > 0){
+                $oldstyle.remove();
+            }
+            var $style = $('<style id="service_style">.service a:hover{color:'+rbgColor+';}</style>');
             $('head').append($style);
         }
     },
     init : function () {
         menuContent.initItemColorFn();
         menuContent.initCarouselColorFn();
+        menuContent.initBorderLineColorFn();
+        menuContent.fnService();
     }
 };

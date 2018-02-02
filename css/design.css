@@ -4,12 +4,7 @@ body{
 hr{
     border-top: 1px solid #fff;
 }
-.condition ul,.pictures ul{
-    list-style: none;
-    overflow: hidden;
-    padding-left: 0;
-    margin: 0;
-}
+
 .condition ul li,.pictures ul li{
     float: left;
 }
@@ -85,12 +80,6 @@ hr{
 .title{
     display: inline-block;
 }
-.filter a{
-    color: #000;
-}
-.filter a:hover{
-    text-decoration: none;
-}
 .condition a{
     margin: 0 15px;
 }
@@ -98,26 +87,6 @@ hr{
     color: #f40;
 }
 
-/*排序css*/
-.sorting{
-    /*display: inline-block;*/
-
-}
-.sorting a{
-    position: relative;
-    display: inline-block;
-    height: 38px;
-    line-height: 38px;
-    border: 1px solid #d0d0d0;
-    padding: 0 20px;
-}
-.sorting a:not(:first-child){
-    margin-left: -1px ;
-}
-.sorting a.active{
-    border-color: #f40;
-    z-index: 1;
-}
 
 /*图片浏览*/
 .jq22-container {
@@ -127,6 +96,7 @@ hr{
 #pictures {
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 
 
@@ -135,9 +105,10 @@ hr{
     float: left;
     overflow: hidden;
     cursor: pointer;
+    width: 42%;
 }
 .box img {
-    width: 500px;
+    width: 100%;
 }
 .box .describe{
     position: absolute;
@@ -156,37 +127,11 @@ hr{
     bottom:0;
 }
 
-/*图片放大*/
-.lightboxOverlay{
-    position: fixed;
-    display:block;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    height:100%;
-    background-color: black;
-    opacity:0.7;
-}
-.img_box{
-    position: fixed	;
-    width:100%;
-    z-index: 1000;
-    top:0px;
-    left:0px;
-    text-align:center;
-}
-.img_inner{
-    padding:15px;
-}
-.img_inner img{
-    border-width : 4px 8px;
-    border-style:solid;
-    border-color:#fff;
-    max-height:95%;
-    max-width:90%;
-    height:auto;
-}
-body{
-    overflow-x: hidden;
+@media (max-width: 768px) {
+    .box{
+        width: 100%;
+    }
+    .box .describe{
+        bottom:0;
+    }
 }

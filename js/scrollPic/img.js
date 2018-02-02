@@ -22,9 +22,8 @@ $(function(){
 			nHeight = image.height;
 		}
 		//w.$img.parent().css({"width":nWidth,"heigth":nHeight});
-	
-		w.$lightbox.show();
-		w.$img.parents(".img_box").show();
+		w.$lightbox.removeClass('hidden');
+		w.$img.parents(".img_box").removeClass('hidden');
 		w.$img.attr("src",newImg); 
 		slowloadimg(w.$img[0]);
 	}
@@ -51,6 +50,6 @@ $(function(){
 					opa0 -= avg;
 					a[0].style.opacity = opa;
 					b[0].style.opacity = opa0;
-				if(opa < 0){window.clearInterval(t1);a.hide().css("opacity",1);b.hide().css("opacity",0.75);}
+				if(opa < 0){window.clearInterval(t1);a.addClass('hidden').css("opacity",1);b.addClass('hidden').css("opacity",0.75);}
 		},1);
 	}

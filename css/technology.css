@@ -21,7 +21,7 @@ hr{
     width: 250px;
     height: 320px;
     margin: 18px;
-    background-color: #fff;
+    /*background-color: #fff;*/
     border-radius: 5px;
     overflow: hidden;
 }
@@ -51,6 +51,7 @@ hr{
 }
 .item-pic>div>a{
     display: inline-block;
+    color: #fff;
     font-size: 18px;
     line-height: 20px;
     transition: transform 0.3s;
@@ -62,23 +63,25 @@ hr{
     height: 100px;
     padding: 8px;
     z-index: 55;
+    background-color: #fff;
     transition: bottom 0.5s 0.15s;
 }
 .item-pic .hidden-box a{
     font-size: 16px;
-    color: #fff;
+    /*color: #fff;*/
     text-decoration:underline;
 }
-.item-pic .hidden-box a:hover{
-    color: #eee;
-}
+/*.item-pic .hidden-box a:hover{*/
+    /*color: #eee;*/
+/*}*/
 .item-pic .hidden-box p{
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
-    color: #fff;
+    /*color: #337ab7;*/
+    color: #626262;
 }
 
 /*图片轮播公共css*/
@@ -158,5 +161,8 @@ ol.carousel-indicators li{
 @media (max-width: 768px) {
     .carousel-indicators{
         width: 80%;
+    }
+    .items{
+        justify-content: space-around;
     }
 }
