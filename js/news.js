@@ -38,7 +38,7 @@ n = {
             n.options.type = 4;
             $lis.eq(3).addClass("active");
         }
-
+        menu.fnColor();
     }
 };
 
@@ -50,7 +50,7 @@ u = {
         n.options.pageNo = n.page.pageNo;
         n.options.length = n.page.length;
         $.ajax({
-            url : "http://immrh.cn/jm/news/list.json",
+            url : "http://127.0.0.1:8089/jm/news/list.json",
             data : n.options,
             type : "POST",
 //                contentType : "application/json;charset=utf-8",
